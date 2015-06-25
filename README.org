@@ -1,0 +1,16 @@
+Define, navigate and run blocks of SuperCollider code in Emacs, separating these with comments like this:
+
+: //:
+
+This is more economical than enclosing them in parentheses =()= and clicking to select the region.
+
+Shortcuts provided to move to previous or next snippet, select snippet, and duplicate snippet.
+
+El-get recipe:
+
+#+BEGIN_SRC emacs-lisp
+(:name sc-snippets :url "https://github.com/iani/sc-snippets.git"
+       :type git
+       :features (sc-snippets)
+       :after nil)
+#+END_SRC
