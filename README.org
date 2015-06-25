@@ -6,6 +6,8 @@ This is more economical than enclosing them in parentheses =()= and clicking to 
 
 Shortcuts provided to move to previous or next snippet, select snippet, and duplicate snippet.
 
+This was initially part of [[https://github.com/iani/tiny-sc][tiny-sc]].  Moved here for modularity.
+
 El-get recipe:
 
 #+BEGIN_SRC emacs-lisp
