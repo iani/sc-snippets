@@ -201,23 +201,24 @@ If prefix argument given, then open inspector in SC on the result"
   (local-set-key (kbd "C-s-n") 'sclang-execute-next-snippet)
   (local-set-key (kbd "C-s-p") 'sclang-execute-previous-snippet)
   ;; alternatives using Control/Meta+Function-key:
-  (local-set-key (kbd "H-SPC") 'org-sc-toggle-synthtree)
+  ;; (local-set-key (kbd "H-SPC") 'org-sc-toggle-synthtree)
   (local-set-key (kbd "H-C-SPC") 'sclang-execute-current-snippet)
   (local-set-key (kbd "H-C-.") 'sclang-execute-current-snippet)
-  (local-set-key (kbd "H-M-SPC") 'sclang-chuck-current-snippet)
-  (local-set-key (kbd "H-M-.") 'sclang-chuck-current-snippet)
+  ;; (local-set-key (kbd "H-M-SPC") 'sclang-chuck-current-snippet)
+  ;; (local-set-key (kbd "H-M-.") 'sclang-chuck-current-snippet)
   (local-set-key (kbd "H-n") 'sclang-goto-next-snippet)
   (local-set-key (kbd "H-p") 'sclang-goto-previous-snippet)
   (local-set-key (kbd "H-C-n") 'sclang-execute-next-snippet)
   (local-set-key (kbd "H-C-p") 'sclang-execute-previous-snippet)
-  (local-set-key (kbd "H-M-n") 'sclang-chuck-next-snippet)
-  (local-set-key (kbd "H-M-p") 'sclang-chuck-previous-snippet)
-  (local-set-key (kbd "H-C-r") 'sclang-process-registry-gui)
+  ;; (local-set-key (kbd "H-M-n") 'sclang-chuck-next-snippet)
+  ;; (local-set-key (kbd "H-M-p") 'sclang-chuck-previous-snippet)
+  ;; (local-set-key (kbd "H-C-r") 'sclang-process-registry-gui)
   ;; C-c C-l is overrriden by sc-extensions. Therefore substitute:
-  (local-set-key (kbd "C-c l") 'sclang-recompile)
+  (local-set-key (kbd "C-S-c l") 'sclang-recompile)
   ;; additional key for convenience: provide SC-IDE shortcut for clearing buffer:
-  (local-set-key (kbd "M-C") 'sclang-clear-post-buffer)
-  (global-set-key (kbd "C-c C-x C-/") 'sclang-init-synth-tree))
+  (local-set-key (kbd "C-S-c c") 'sclang-clear-post-buffer)
+  ;; (global-set-key (kbd "C-c C-x C-/") 'sclang-init-synth-tree)
+  )
 
 ;; add to sclang-mode-hook
 (add-hook 'sclang-mode-hook 'sc-snippets)
